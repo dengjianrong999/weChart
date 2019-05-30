@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/page2/page2",
+    "pages/d/d",
+    "pages/index/index",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/icon_API_HL.png",
+        "iconPath": "images/icon_API.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/icon_component_HL.png",
+        "iconPath": "images/icon_component.png",
+        "pagePath": "pages/page2/page2",
+        "text": "一元投"
+      },
+      {
+        "selectedIconPath": "images/icon_component_HL.png",
+        "iconPath": "images/icon_component.png",
+        "pagePath": "pages/d/d",
+        "text": "设置"
+      }
+    ]
+  }
+}

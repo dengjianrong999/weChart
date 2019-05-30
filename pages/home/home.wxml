@@ -1,0 +1,37 @@
+<!--pages/home/home.wxml-->
+<view class='content'>
+  <view class='heade'>
+    <view class='title'>元品仓</view>
+  </view>
+  <view class='searchP'>
+    <input class='search' placeholder='搜索/产品/品牌'></input>
+    <text>搜索</text>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='reshcontent'>
+    <view class='listSp' wx:for="{{lisT}}">
+      <view class='toplist'>
+        <view class='images'></view>
+      </view>
+      <view class='botlist'>
+        <view class='images'></view>
+        <view class='images'></view>
+        <view class='images'></view>
+      </view>
+    </view>
+  </view>
+  <view class='loading' hidden='{{isMore}}'>
+    <image class='loa' src='https://img.zcool.cn/community/01280157e1e2f80000012e7e81b798.gif'></image>
+    <view  class='tet'>下拉刷新...</view>
+  </view>
+   <view class='loading' hidden='{{isOver}}'>
+    <view  class='tet'>没有了呢⊙⌒⊙</view>
+  </view>
+
+</view>

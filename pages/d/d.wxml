@@ -1,0 +1,11 @@
+<!--pages/d/d.wxml-->
+
+<view  class='container'>
+    <view class='message'>你需要向小程序提供以下权限即可继续操作</view>
+    <view>· 获得你的公开信息(昵称、头像等)</view>
+    <view class='Marksure' bindtap="Isauthorize">确认登录</view>
+   <view wx:if="{{userInfo != ''}}" class='userInfo'>
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>欢迎你：{{userInfo.nickName}}</view>
+   </view>
+</view>

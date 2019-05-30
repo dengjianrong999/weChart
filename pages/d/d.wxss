@@ -1,0 +1,28 @@
+/* pages/d/d.wxss */
+.fix-news{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 99999;
+}
+.Marksure{
+  text-align: center;
+  background-color: rgb(99, 184, 82);
+  color: #fff;
+}
+.message{
+  color: #333;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+.userInfo{
+  display: flex;
+  flex-direction:center;
+  justify-content:center;
+  align-items:center;
+}
