@@ -1,7 +1,15 @@
 Page({
   data: {
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    userIo:[]
+    userIo:[],
+    IsShow:true,
+
+    targetTime: 0,
+    targetTime1: 0,
+    myFormat: ['时', '分', '秒'],
+    myFormat1: ['天', '时', '分', '秒'],
+    status: '进行中...',
+    clearTimer: false
   },
   onLoad: function () {
     let that = this;
@@ -17,12 +25,28 @@ Page({
           })
         }
       }
-    })
+    });
+
+    that.setData({
+      targetTime2: new Date().getTime() + 10000
+    });
   },
   bindGetUserInfo(e) {
     this.setData({
-      userIo: e.detail.userInfo
+      userIo: e.detail.userInfo,
+      IsShow:false,
     })
     console.log(e.detail.userInfo)
+  },
+
+  onUnload() {
+    this.setData({
+      clearTimer: true
+    });
+  },
+  myLinsterner(e) {
+    this.setData({
+      status: '结束'
+    });
   }
 })

@@ -15,14 +15,45 @@
   font-size: 30rpx;
   font-weight: 700;
 }
-image{
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 100rpx;
-}
 .userInfo{
   display: flex;
   flex-direction:center;
   justify-content:center;
   align-items:center;
+}
+
+button{
+  width:90%;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 40rpx;
+  box-shadow: 1px 1px 1px 1px rgb(194, 154, 154);
+}
+.head-P{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 90rpx;
+  background-color: rgb(192, 182, 49);
+}
+.name{
+  display: flex;
+}
+.view-contain{
+  margin-top: 30rpx;
+}
+.lit{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 50rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+}
+.lit i{
+  width: 20rpx;
+}
+.lit text{
+  width: calc(100% - 20rpx);
 }

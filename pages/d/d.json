@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "i-card": "../../dist/card/index",
+    "i-count-down": "../../dist/count-down/index",
+    "i-action-sheet": "../../dist/action-sheet/index",
+    "i-avatar": "../../dist/avatar/index",
+        "i-icon": "../../dist/icon/index"
+  }
 }

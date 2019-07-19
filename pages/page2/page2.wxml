@@ -1,36 +1,16 @@
 <!--pages/page2/page2.wxml-->
 <view class='content'>
   <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
-
-  <view>
-    <text style='color:#000;font-size:26rpx'>退款原因</text>
-  </view> 
-  <!-- <view class='reason'> -->
-  <!-- <block wx:for="{{reason}}">
-      <text id="{{index}}" data-text='{{item}}' bindtap='selectBtn'>          
-   <block wx:if="{{index==clickId}}">            
-      <text class='reason_item' style='background:#ff0000;color:#fff'>{{item}}</text>
-    </block>
-    <block wx:else>
-      <text class='reason_item' style='background:#fff;color:#ff0000'>{{item}}</text>
-    </block>
-    </text>
-    </block>
-  </view>
-
-
-
-  <!-- 排他展示页 -->
   <view class='menuList' wx:for="{{list}}">
-    <view class='oneList'  data-id="{{item.id}}"  bindtap="clickOne">
+    <view class='oneList' data-id="{{item.id}}" bindtap="clickOne">
       <view class='oneTitle'>{{item.name}}</view>
     </view>
-    <block wx:if="{{item.open}}"  class="{{item.open? 'showClass':'hideClass' }}"  >
+    <block wx:if="{{item.open}}" class="{{item.open? 'showClass':'hideClass' }}">
       <view class='twoList' wx:for="{{item.child}}" wx:for-item="child" animation="{{textLeftAnimation}}">
-        <view  data-curid="{{child.id}}"  data-child="{{child}}" bindtap="linkTo"  class='twoTitle'>{{child.title}} {{child.id}}</view>
+        <view data-curid="{{child.id}}" data-child="{{child}}" bindtap="linkTo" class='twoTitle'>{{child.title}} {{child.id}}</view>
       </view>
     </block>
   </view>
-  
+
 
 </view>

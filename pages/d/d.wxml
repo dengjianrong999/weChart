@@ -1,13 +1,41 @@
 <!--pages/d/d.wxml-->
 
-<view  class='container'>
-<open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data>
-<!-- 需要使用 button 来授权登录 -->
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
-<view wx:else>请升级微信版本</view>
+<view class='container'>
+
+  <!-- 需要使用 button 来授权登录 -->
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <image src='{{userIo.avatarUrl}}' class="head-P"></image>
+    <block wx:if="{{IsShow}}">
+      <text>点击获取头像,昵称</text>
+    </block>
+    <view wx:if="{{!IsShow}}" class='name'>
+      <block wx:if="{{!IsShow}}">欢迎你：</block>
+      {{userIo.nickName}}
+    </view>
+  </button>
+
+  <view class='view-contain'>
+    <view class='lit'>
+      <i-icon type="brush" size="28" color="#80848f" />
+      <text>服务中心</text>
+      <i-icon type="enter" />
+    </view>
+    <view class='lit'>
+      <i-icon type="flashlight" size="28" color="#80848f" />
+      <text>信息中心</text>
+      <i-icon type="enter" />
+    </view>
+    <view class='lit'>
+      <i-icon type="flag" size="28" color="#80848f" />
+      <text>获取更多</text>
+      <i-icon type="enter" />
+    </view>
+    <view class='lit'>
+     <i-icon type="customerservice" size="28" color="#80848f" />
+      <text>投诉中心</text>
+      <i-icon type="enter" />
+    </view>
+  </view>
 
 
-{{userIo.nickName}}
-<image src='{{userIo.avatarUrl}}'></image>
 </view>
