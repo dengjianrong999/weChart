@@ -1,15 +1,43 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //   }
+    // })
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success(res) {
+        if (res.code) {
+          //发起网络请求
+          // wx.request({
+          //   url: 'https://data.xingdouio.com/system/login',
+          //   data: {
+          //   }
+          // })
+          wx.request({
+            url: 'https://data.xingdouio.com/system/login', //仅为示例，并非真实的接口地址
+            method: 'POST',
+            data: {
+              username: 'admin',
+              password: 'Cs123456',
+              token:"F8A7jE78yJ7iiaynvMCvkw"
+            },
+            header: {
+              'content-type': 'application/json' // 默认值
+            },
+            success(res) {
+              console.log(res.data)
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息

@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-top: 100rpx;
 } 
 
 page {
@@ -16,4 +15,5 @@ page {
   color: #333;
   display: flex;
   flex-direction: column;
+  background-color: #ededed;
 }

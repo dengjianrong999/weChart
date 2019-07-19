@@ -1,3 +1,4 @@
 {
-  "usingComponents": {}
+    "navigationBarBackgroundColor": "#F7D3BB",
+    "navigationBarTitleText": "成语很easy"
 }

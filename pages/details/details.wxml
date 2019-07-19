@@ -1,0 +1,8 @@
+
+<view class='content'>
+  <view class='text'>
+    <text bindtap="backTo">《返回 </text>
+  </view>
+  <text>pages/details/details.wxml</text>
+  <view>{{details.child[0].text}}</view>
+</view>

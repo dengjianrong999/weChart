@@ -1,19 +1,20 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/page2/page2",
-    "pages/d/d",
+    "pages/map/map",
     "pages/index/index",
-    "pages/logs/logs"
-
+    "pages/load/load",
+    "pages/d/d",
+    "pages/logs/logs",
+    "pages/page2/page2",
+    "pages/details/details",
+    "pages/form/form"
   ],
   "window": {
-    "navigationStyle": "custom",
-    "enablePullDownRefresh": true,
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#cc0000",
+    "navigationBarTitleText": "数据展示",
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
     "color": "#a9b7b7",
@@ -30,7 +31,13 @@
         "selectedIconPath": "images/icon_component_HL.png",
         "iconPath": "images/icon_component.png",
         "pagePath": "pages/page2/page2",
-        "text": "一元投"
+        "text": "数据中心"
+      },
+      {
+        "selectedIconPath": "images/icon_component_HL.png",
+        "iconPath": "images/icon_component.png",
+        "pagePath": "pages/d/d",
+        "text": "展示平台"
       },
       {
         "selectedIconPath": "images/icon_component_HL.png",

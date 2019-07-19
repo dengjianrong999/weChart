@@ -1,0 +1,11 @@
+/* pages/details/details.wxss */
+.content{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 221, 221);
+}
+.text{
+  width: 100%;
+  background-color: #fff;
+  padding: 10rpx 50rpx;
+}

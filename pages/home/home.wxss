@@ -7,6 +7,7 @@
   height: 200rpx;
   background-color: rgb(223, 21, 21);
   position: fixed;
+  top:0;
   z-index: 999;
 }
 .title{
@@ -23,11 +24,11 @@
   flex: 1;
   background-color: #fff;
   position: fixed;
-  top: 200rpx;
+  top: 0rpx;
   z-index: 999;
 }
 swiper{
-  margin-top: 315rpx;
+  margin-top: 120rpx;
 }
 input{
   width:calc(100% - 140rpx);

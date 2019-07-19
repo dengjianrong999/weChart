@@ -1,18 +1,21 @@
-// pages/logs/index.js
+// pages/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    details:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let list = JSON.parse(options.objCur);
+    this.setData({
+      details: list,
+    })
   },
 
   /**
@@ -60,7 +63,15 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
 
+  //右上角分享功能
+  onShareAppMessage: function (res) {
+
+  },
+  backTo(){
+
+    wx.navigateBack({
+      url: '../page2/page2',
+    })
   }
 })

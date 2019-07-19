@@ -1,0 +1,30 @@
+<view class="g-doc" hidden="{{pageLoading}}">
+  <view class="g-hd">
+    {{inputValue}}
+  </view>
+  <input type="number" placeholder="请输入验证码" class="inp-holder" maxlength="11" bindinput="getCode" />
+  <view class="g-bd">
+    <!-- layer-top 等同于 g-hd的高度 -->
+    <view class="layer-top"></view>
+    <block wx:if="{{list.length}}">
+      <block wx:for="{{list}}" wx:key="*this">
+        <view class='listT'> {{item.name}}</view>
+      </block>
+      <!-- 加载条 start -->
+      <view class='loading' hidden='{{isMore}}'>
+        <image class='loa' src='https://img.zcool.cn/community/01280157e1e2f80000012e7e81b798.gif'></image>
+        <view class='tet'>下拉刷新...</view>
+      </view>
+      <view class='loading' hidden='{{isOver}}'>
+        <view class='tet'>没有了呢⊙⌒⊙</view>
+      </view>
+      <!-- 加载条 end -->
+    </block>
+    <block wx:else>
+      暂无记录
+    </block>
+    <!-- layer-top 等同于 g-ft 的高度 -->
+
+
+  </view>
+</view>

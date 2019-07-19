@@ -32,5 +32,11 @@ Page({
         isOver: false,
       })
     }
-  }
+  },
+
+  
+  //右上角分享功能
+  onShareAppMessage: function (res) {
+
+  },
 })
