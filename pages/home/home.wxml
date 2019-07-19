@@ -24,7 +24,7 @@
   </view>
   <view class='loading' hidden='{{isMore}}'>
     <image class='loa' src='https://img.zcool.cn/community/01280157e1e2f80000012e7e81b798.gif'></image>
-    <view  class='tet'>下拉刷新...</view>
+    <view  class='tet'>更多...</view>
   </view>
    <view class='loading' hidden='{{isOver}}'>
     <view  class='tet'>没有了呢⊙⌒⊙</view>
