@@ -1,11 +1,10 @@
 <view class="g-doc" hidden="{{pageLoading}}">
-  <view class="g-hd">
+  <!-- <view class="g-hd">
     {{inputValue}}
-  </view>
-  <input type="number" placeholder="请输入验证码" class="inp-holder" maxlength="11" bindinput="getCode" />
+  </view> -->
+  <input type="number" placeholder="搜搜看" class="inp-holder" maxlength="11" bindinput="getCode" />
   <view class="g-bd">
     <!-- layer-top 等同于 g-hd的高度 -->
-    <view class="layer-top"></view>
     <block wx:if="{{list.length}}">
       <block wx:for="{{list}}" wx:key="*this">
         <view class='listT'> {{item.name}}</view>

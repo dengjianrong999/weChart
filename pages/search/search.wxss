@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  background-color: #fff;
 }
  
 .g-doc {
@@ -27,7 +28,6 @@
   background: transparent;
   -webkit-box-flex: 1;
   flex: 1;
-  margin-bottom: 50px;
 }
  
 .g-ft {
@@ -37,7 +37,7 @@
 }
 .listT{
   padding: 30rpx 50rpx;
-  border:1px solid red;
+  border-top:1px solid #ededed;
 }
 .loa{
   width: 100rpx;
@@ -54,7 +54,9 @@
   color: #333;
 }
 .inp-holder{
-  width:100%;
+  width:90%;
+  margin: 0 auto;
   height: 42px;
-  border: 1px solid #804545;
+  padding-left: 10rpx;
+  border: 1px solid #ededed;
 }

@@ -101,10 +101,7 @@ Page({
     loadMore(this);
     console.log("重新加载");
   },
-
-
   // 获取input的值
-
   getCode(e){
     console.log(e)
     this.setData({
@@ -128,9 +125,7 @@ Page({
    */
   onUnload: function() {},
   /**
-  
   /**
-
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {}

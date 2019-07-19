@@ -1,1 +1,21 @@
 /* pages/form/form.wxss */
+.songSearch input{
+  width: 100%;
+  height: 80rpx;
+  margin: 0 auto;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  padding-left: 50rpx;
+}
+.listImg{
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  border-bottom:1px solid #ededed;
+}
+.listImg image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  padding: 20rpx;
+}

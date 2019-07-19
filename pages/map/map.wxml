@@ -1,1 +1,0 @@
-<map id="myMap"  latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location />

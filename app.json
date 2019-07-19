@@ -1,15 +1,13 @@
 {
   "pages": [
-
     "pages/home/home",
-    "pages/map/map",
     "pages/index/index",
-    "pages/load/load",
-     "pages/d/d",
+    "pages/search/search",
+    "pages/d/d",
     "pages/logs/logs",
     "pages/page2/page2",
-    "pages/details/details",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +37,12 @@
         "iconPath": "images/icon_component.png",
         "pagePath": "pages/logs/logs",
         "text": "类型展示"
+      },
+      {
+        "selectedIconPath": "images/icon_component_HL.png",
+        "iconPath": "images/icon_component.png",
+        "pagePath": "pages/form/form",
+        "text": "歌曲列表"
       },
       {
         "selectedIconPath": "images/icon_component_HL.png",
